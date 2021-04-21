@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YemekSepeti.Views.ProductsView"
+             xmlns:helpers="clr-namespace:YemekSepeti.Helpers"
+             xmlns:vm="clr-namespace:YemekSepeti.ViewModels">
+
+        <ContentPage.BindingContext>
+            <vm:ProductsViewModel>
+            </vm:ProductsViewModel>
+        </ContentPage.BindingContext>
+
+        <ContentPage.Content>
+        <ScrollView>
+
+            <RelativeLayout>
+
+                <BoxView BackgroundColor="White" x:Name="BoxView1"
+                 RelativeLayout.WidthConstraint=
+                 "{ConstraintExpression Type=RelativeToParent, Property= Width, Factor= 1}"
+                 
+                 RelativeLayout.HeightConstraint=
+                 "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.1}">
+
+                </BoxView>
+
+                <StackLayout BackgroundColor="#ff6508" Orientation="Horizontal" Spacing="0"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=0.2}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}"
+                   HeightRequest="50"
+                   WidthRequest="410">
+
+
+                    <Image Source="IcnFavoriYemekler.png"  HeightRequest="20" Margin="10">
+
+                    </Image>
+
+                    <StackLayout BackgroundColor="#ff6508" Orientation="Vertical" Spacing="10"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=0.5}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.5}"
+                   WidthRequest="200">
+
+                        <BoxView BackgroundColor="#ff6508" HeightRequest="5"></BoxView>
+                        <Label Text="En Çok Tercih Edilenler" TextColor="#fff" FontAttributes="Bold" FontSize="14">
+
+                        </Label>
+
+                    </StackLayout>
+                </StackLayout>
+                <AbsoluteLayout BackgroundColor="White" HeightRequest="90" WidthRequest="420" TranslationY="70">
+
+                </AbsoluteLayout>
+                <Image Source="ImgKomagene.png" HeightRequest="100" WidthRequest="100" 
+                 RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height, Factor=1}"
+                 RelativeLayout.XConstraint=
+                  "{ConstraintExpression Type=RelativeToView,ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Image>
+                <Label Text="Komagene Etsiz Çiğ Köfte, Keçiören" TextColor="#333" FontAttributes="Bold" FontSize="14" 
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=1.15}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.35}">
+                </Label>
+
+
+                <AbsoluteLayout BackgroundColor="White" HeightRequest="125" WidthRequest="420" TranslationY="170">
+
+                </AbsoluteLayout>
+                <AbsoluteLayout BackgroundColor="White" HeightRequest="125" WidthRequest="420" TranslationY="300">
+
+                </AbsoluteLayout>
+                <AbsoluteLayout BackgroundColor="White" HeightRequest="125" WidthRequest="420" TranslationY="530">
+
+                </AbsoluteLayout>
+
+
+                <Label Text="Çiğ Köfte Dürüm" TextColor="#333" FontAttributes="Bold" FontSize="14"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=3}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="90 gr. çiğ köfte, tek lavaş" TextColor="#333" FontSize="12"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=3.4}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="7.5 TL" TextColor="#ff6508" FontSize="16"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=3.9}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.2}">
+                </Label>
+
+                <ImageButton Source="IcnSepeteEkle.png" Scale="0.5"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=3.7}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.01}">
+                </ImageButton>
+
+                <Image Source="cigkoftedurum1.png" Scale="0.4"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=1.3}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.4}">
+                </Image>
+
+
+
+
+                <Label Text="Ultra Mega Çiğ Köfte Dürüm" TextColor="#333" FontAttributes="Bold" FontSize="14"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=5}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="150gr. çiğ köfte, çift lavaş" TextColor="#333" FontSize="12"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=5.4}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="11.5 TL" TextColor="#ff6508" FontSize="16"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=5.9}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.2}">
+                </Label>
+
+                <ImageButton Source="IcnSepeteEkle.png" Scale="0.5"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=5.7}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.01}">
+                </ImageButton>
+
+                <Image Source="cigkoftedurum2.png" Scale="0.4"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=3.2}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.4}">
+                </Image>
+
+
+                <AbsoluteLayout BackgroundColor="White" HeightRequest="90" WidthRequest="420" TranslationY="430">
+
+                </AbsoluteLayout>
+                <Image Source="ImgOsmanliSofrasi.png" HeightRequest="100" WidthRequest="100" 
+                 RelativeLayout.YConstraint=
+                 "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height, Factor=6.4}"
+                 RelativeLayout.XConstraint=
+                  "{ConstraintExpression Type=RelativeToView,ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Image>
+                <Label Text="Karaoğulları Osmanlı Kebap, Keçiören" TextColor="#333" FontAttributes="Bold" FontSize="14" 
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=6.6}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.35}">
+                </Label>
+
+                <Label Text="Lahmacun" TextColor="#333" FontAttributes="Bold" FontSize="14"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=8.2}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="Mevsim salata, acılı ezme ile" TextColor="#333" FontSize="12"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=8.6}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.05}">
+                </Label>
+
+                <Label Text="13 TL" TextColor="#ff6508" FontSize="16"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=9.1}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.2}">
+                </Label>
+
+                <ImageButton Source="IcnSepeteEkle.png" Scale="0.5"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=8.9}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.01}">
+                </ImageButton>
+
+                <Image Source="Kebap1.png" Scale="0.35"
+                   RelativeLayout.YConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Height,Factor=7}"
+                   RelativeLayout.XConstraint=
+                   "{ConstraintExpression Type=RelativeToView, ElementName=BoxView1, Property=Width, Factor=0.29}">
+                </Image>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

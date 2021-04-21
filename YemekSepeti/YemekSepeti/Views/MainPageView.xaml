@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YemekSepeti.Views.MainPageView">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Orientation="Horizontal" BackgroundColor="White">
+                <Image Source="ImgYemekSepeti.png" WidthRequest="200" HorizontalOptions="CenterAndExpand"></Image>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="Center">
+                <Button ImageSource="IcnUyeGirisi" Text="Üye Girişi" WidthRequest="200" HeightRequest="50"
+                        TextColor="#48912a" BackgroundColor="White" Clicked="UyeGirisiBtn_Clicked"></Button>
+                <Button ImageSource="IcnYeniUye" Text="Yeni Üyelik" WidthRequest="200" HeightRequest="10"
+                        TextColor="#48912a" BackgroundColor="White" Clicked="KayitOlBtn_Clicked"></Button>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
