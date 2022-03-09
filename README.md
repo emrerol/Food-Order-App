@@ -1,5 +1,3 @@
-# YemekSepeti
-YemekSepetiXamarinProjectDemo
+## OOP Dersi için yapmış olduğumuz Xamarin projesi:
 
-
-Xamarin ile yaptığımız Yemeksepeti uygulaması ilk hali. Zaman içerisinde güncelleyerek tam hali oluşturulacak.
+#### Firebase, SQLite içerir. Kullanıcı login işlemleri ve cart işlemleri bulunmakta. 
